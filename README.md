@@ -21,3 +21,21 @@ I've written game engines before that measure player skill directly by looking a
 Firstly, what is a replay? While players are playing a match, the game is recording all the actions players are taking. Player 3 clicked on this location. Player 5 used ability B on target unit X. A file gets saved to your computer whenever a match finishes, and you can open that replay with the game, which essentially plays back all the players' actions. Replays also contain something called Stat Events which contain some useful metadata about things going on in the match.
 
 I thought grabbing data out of the replay was going to be easy. I'll just look at the stat events to get everything I need. Man, was I wrong. Heroes of the Storm is actually a modification of the StarCraft 2 engine. While making StarCraft 2, Blizzard decided they would do as little as possible to support replay analysis. If you've ever been to chess.com, you know they have some really awesome tools to analyze any game or position, and a top chess engine to explain what all the best moves are and why. Blizzard went out of their way to make sure this would be impossible for the fans to create.
+
+Here's the full list of all the useful information the replay files contain:
+- The player names, hero choices, and talent selections (upgrades) of each player.
+- Player positions, which I get every 240 game ticks (15 seconds)
+- **SOME** map-specific events (more on this in a bit)
+- Notification events like deaths and mercenary captures.
+- Overall endgame stats. This mainly includes how much damage and healing they did.
+
+The more astute among you may notice that this list is rather short. Here are some things that the replays do **NOT** contain:
+- The locations of players for any of the other 239 game ticks within that 15 second interval.
+- Most important information about map mechanics
+- Individual damage events (who's dealing damage to who and when)
+- Which abilities players are using (I get an ability ID, but these change with every patch and there is no known way to map them on a by-replay basis)
+
+One of the things I wanted to track was how efficient players were being with their damage. Are you attacking invincible tanks who are actively receiving healing? Or are you attacking an enemy that can actually be killed? This cannot be determined without making my own StarCraft 2 engine.
+
+## The replay format was made by 10 dudes who did not share ideas
+Most of the time it took me to make the replay analyzer was in figuring out how everything in the replay worked. It is wildly inconsistent, with references to the same entities being represented in completely different ways. Sometimes team 0 is team 0, and sometimes it's team 11, and sometimes it's team 14. Sometimes the player IDs are 0-indexed, and sometimes they're 1-indexed. X/Y coordinates are sometimes the correct value, but sometimes they are the correct value times 4096. On Hanamura Temple, the obejctive spawns at a +3,-3 offset of where the replay says it spawns. All of this is strong evidence that different pieces of the replay were made by different people, and none of them shared any information or documentation about how things should be done.
