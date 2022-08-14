@@ -29,7 +29,7 @@ Here's the full list of all the useful information the replay files contain:
 - Player positions, which I get every 240 game ticks (15 seconds)
 - **SOME** map-specific events (more on this in a bit)
 - Notification events like deaths and mercenary captures.
-- Overall endgame stats. This mainly includes how much damage and healing they did.
+- Overall endgame stats. This mainly includes how much damage and healing each player dealt.
 
 The more astute among you may notice that this list is rather short. Here are some things that the replays do **NOT** contain:
 - The locations of players for any of the other 239 game ticks within that 15 second interval.
