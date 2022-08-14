@@ -25,7 +25,7 @@ Firstly, what is a replay? While players are playing a match, the game is record
 I thought grabbing data out of the replay was going to be easy. I'll just look at the stat events to get everything I need. Man, was I wrong. Heroes of the Storm is actually a modification of the StarCraft 2 engine. While making StarCraft 2, Blizzard decided they would do as little as possible to support replay analysis. If you've ever been to chess.com, you know they have some really awesome tools to analyze any game or position, and a top chess engine to explain what all the best moves are and why. Blizzard went out of their way to make sure this would be impossible for the fans to create.
 
 Here's the full list of all the useful information the replay files contain:
-- The player names, hero choices, and talent selections (upgrades) of each player.
+- The player names, hero choices, and talent selections (sort of like items from other mobas) of each player.
 - Player positions, which I get every 240 game ticks (15 seconds)
 - **SOME** map-specific events (more on this in a bit)
 - Notification events like deaths and mercenary captures.
