@@ -6,7 +6,7 @@ One day, frustrated at how worthless the ranking system in Heroes of the Storm i
 ### 1) It's not a ranking system
 A ranking system is defined as any system that orders players by some metric. A single player has a **unique** rank. Gold, Silver, and Bronze are ranks at the Olympics - only one competitor can have each medal. First place, second place, etc are ranks in racing games. Gold 3 is not a rank. Bronze 1 is not a rank. These are achievements. The game lumps players into these achievements, which are nothing more than a shiny icon with a feel-good word next to it.
 
-In an actual ranking system, ayn player who knows their rank also knows how many players are ranked higher than them. This is not the case in most online games.
+In an actual ranking system, any player who knows their rank also knows how many players are ranked higher than them. This is not the case in most online games.
 
 ### 2) It scores solely by wins and losses
 Rating systems that score players often use wins and losses as the main method for determining how players move in the ladder. This works for skill-based 1v1 games like chess, because better players are more likely to win a game, and they have total control over the outcome of the match. Heroes of the Storm is not a skill-based game (as we'll see later), and it is not a 1v1 game where you control 100% of your team's actions. You can be the best player in a match and still lose. You can be the worst player in a match and still win. This is because you have 4 teammates, any of which could be an AFK feeding dumbass. 
