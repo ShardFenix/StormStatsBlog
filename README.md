@@ -71,7 +71,11 @@ Most of the top heroes are permanently invincible tanks who have way too much da
 
 The difference between the top hero and the bottom hero in terms of overall power is 355%. A single Malganis is almost as powerful as an entire team of Novas. This does **not** mean that Malganis can solo 4-and-a-half Novas, any more than it means a Queen can capture 9 pawns in 1 move. It just means that Malganis has as much damage, healing, and utility as 4-and-a-half Novas.
 
+At the start of each match, each team gets to ban 3 heroes each (4 before hero selection and 2 more in the mdidle of hero selection), totalling 6 bans per game. In a balanced game, each hero should be banned about the same amount as any other hero, which would result in a 6/90 chance, or roughly 7%.
+
 The top banned heroes are Brightwing, Johanna, Stukov, and Rehgar, which are each banned about 600% more often than they should, given that only 6 heroes get banned out of 90 total heroes in the game. Rehgar's win rate is nearly 60%, in a game where the theoretical max win rate is 55%. This has actually been the case for several years, but Blizzard is too busy raping their employees, and thus can't take 15 minutes to do their jobs.
+
+As of this writing, there are 15856 ranked games tracked by the system. Johanna has been banned in 10060 of them. Probius has been banned in 59 of them. That's a 16950% difference.
 
 ## How much does the matchmaker suck?
 The accuracy of a rating system can be measured by how often you can tie rating differences to match outcomes, or in other words, how accurately you can predict match outcomes based on the ratings of the players. If I do this blindly, StormStats has an accuracy of 89%. However, about half the players in my system only have one game played, so their rating will almost always be positive if they won, or negative if they lost. This is a form of selection bias. I can mostly avoid this by excluding replays that contain such players. When I do this, the accuracy drops to 83%, which is still outstanding. This means if you give me the account names of the players on the loading screen, I can predict which team will win 83% of the time. I don't even need to look at which heroes are picked.
