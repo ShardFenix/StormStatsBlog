@@ -79,6 +79,19 @@ The top banned heroes are Brightwing, Johanna, Stukov, and Rehgar, which are eac
 
 As of this writing, there are 25951 ranked games tracked by the system. Johanna has been banned in 16223 of them. Probius has been banned in 89 of them. That's a 18128% difference. Morons on the forum still claim the game is "decently balanced."
 
+Anyway, here are the chances you win a game if you have a higher endgame stat than the other team:
+
+| Stat  | Chance of Winning |
+| ------------- | ------------- |
+| Healing | 92% |
+| StormStats rating | 83% |
+| Mercenary Camps* | 76% |
+| Hero Damage  | 75% |
+| Siege Damage | 66% |
+| Crowd Control | 62% |
+
+*Mercenary camps are measured by the strength of the camp and by how long they push the lane before dying.
+
 ## How much does the matchmaker suck?
 The accuracy of a rating system can be measured by how often you can predict match outcomes based on the ratings of the players. If I do this blindly, StormStats has an accuracy of 89%. However, about half the players in my system only have one game played, so their rating will almost always be positive if they won, or negative if they lost. This is a form of selection bias. I can mostly avoid this by excluding replays that contain such players. When I do this, the accuracy drops to 83%, which is still outstanding. This means if you give me the account names of the players on the loading screen, I can predict which team will win 83% of the time. I don't even need to look at which heroes are picked. There's still a little bias in that number, but you can show mathematically that the accuracy has a limit as the bias decreases, and that limit is just over 78%. That is to say, if each player in my system had an infinite number of games played, I would be able to predict matches over 78% of the time.
 
@@ -93,7 +106,9 @@ The replay analyzer can detect players who AFK pretty accurately. It never detec
 ## Other technical hurdles ##
 Before I went public with the website, I was working on an uploader that could see the account IDs and heroes selected in draft mode. It was going to show each player's most popular/successful heroes, and suggest bans for your team to make, based on what's been selected so far. It's at this point HotS started crashing regularly. Even after a full reinstall of battle.net and the game, HotS has become unplayable, and that tool has been abandoned.
 
-Only one other person has made a tool like this, and his works by taking a screenshot of the game, and using image recognition to get the player names from the text on screen. His way doesn't actually tell you which player is which because account names are not unique.
+Only one other person has made a tool like this, and his works by taking a screenshot of the game, and using image recognition to get the player names from the text on screen. This is just one example of the lengths fans have to go to in order to squeeze basic funtionality out of a game that should just have that functionality to begin with.
+
+I had more plans for additional features, but with HotS being unplayable, and Blizzard being a worthless company full of drunk rapists (this isn't me ranting, that's actually true, google it), I don't have the motivation to do that. StormStats will exist in its current state, which is a few million times more accurate than everyone else's rating systems, so I'm ok with that.
 
 ## How to support esports ##
 
