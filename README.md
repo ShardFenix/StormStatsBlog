@@ -89,6 +89,7 @@ Anyway, here are the chances you win a game if you have a higher endgame stat th
 | Hero Damage  | 75% |
 | Siege Damage | 66% |
 | Crowd Control | 62% |
+| In-Game MMR  | 50%  |
 
 *Mercenary camps are measured by the strength of the camp and by how long they push the lane before dying.
 
