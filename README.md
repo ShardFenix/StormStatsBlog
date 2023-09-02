@@ -85,6 +85,7 @@ Anyway, here are the chances you win a game if you have a higher endgame stat th
 | ------------- | ------------- |
 | Healing | 92% |
 | StormStats rating | 83% |
+| Kills | 83% |
 | Mercenary Camps* | 76% |
 | Hero Damage  | 75% |
 | Siege Damage | 66% |
