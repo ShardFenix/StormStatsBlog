@@ -86,10 +86,11 @@ Anyway, here are the chances you win a game if you have a higher endgame stat th
 | Healing | 92% |
 | StormStats rating | 83% |
 | Kills | 83% |
-| Mercenary Camps* | 76% |
-| Hero Damage  | 75% |
-| Siege Damage | 66% |
-| Crowd Control | 62% |
+| Mercenary Camps* | 80% |
+| Regen Globes | 75% |
+| Hero Damage  | 73% |
+| Siege Damage | 72% |
+| Crowd Control | 53% |
 | In-Game MMR  | 50%  |
 
 *Mercenary camps are measured by the strength of the camp and by how long they push the lane before dying.
