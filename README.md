@@ -1,7 +1,7 @@
 # What I Learned Making a Heroes of the Storm Replay Analyzer
 Listen to my story. It's a story of intrigue, of disappointment, but mostly it's a story about how incompetent Blizzard is.
 
-One day, frustrated at how bad and inaccurate the ranking system in Heroes of the Storm is, I decided to make my own ranking system. Here it is: [StormStats](https://www.stormstats.net/hots/home)
+One day, frustrated at how bad and inaccurate the ranking system in Heroes of the Storm is, I decided to make my own ranking system. (Due to some AWS deprecations, it's currently not available for public viewing)
 
 There are several issues with the official ranking system the game uses:
 
